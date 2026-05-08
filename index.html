@@ -3,97 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Digital - M. Idham Baihaqi</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>CV Muhammad Idham Baihaqi</title>
     <style>
-        body { background: #0f172a; color: #f1f5f9; font-family: sans-serif; margin: 0; display: flex; }
-        .sidebar { width: 320px; background: #1e293b; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; border-right: 3px solid #38bdf8; position: fixed; height: 100%; box-sizing: border-box; }
-        .profile-img { width: 180px; height: 180px; border-radius: 20px; border: 4px solid #38bdf8; object-fit: cover; margin-bottom: 20px; }
-        .contact-box { width: 100%; font-size: 13px; color: #94a3b8; margin-top: 20px; }
-        .contact-box div { margin-bottom: 10px; display: flex; gap: 10px; }
-        .contact-box i { color: #38bdf8; width: 20px; }
-        .content { margin-left: 320px; padding: 40px; flex-grow: 1; }
-        .section { background: #1e293b; padding: 25px; border-radius: 15px; border: 1px solid #334155; margin-bottom: 25px; }
-        h1 { color: #38bdf8; border-left: 5px solid #38bdf8; padding-left: 15px; margin-bottom: 20px; font-size: 22px; text-transform: uppercase; }
-        .item b { font-size: 17px; color: #f1f5f9; }
-        .item small { color: #38bdf8; font-weight: bold; display: block; margin-bottom: 8px; }
-        ul { padding-left: 20px; color: #94a3b8; font-size: 14px; margin-top: 5px; }
-        li { margin-bottom: 5px; line-height: 1.5; }
-        .skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
-        .skill-tag { background: rgba(56, 189, 248, 0.1); padding: 5px 10px; border-radius: 5px; border: 1px solid #38bdf8; font-size: 13px; text-align: center; }
+        /* 1. PERINTAH PENGATURAN TAMPILAN & FOTO (CSS) */
+        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        
+        /* Mengatur foto agar bulat dan ukurannya pas */
+        .profile-section { text-align: center; margin-bottom: 20px; }
+        .profile-img { 
+            width: 110px; 
+            height: 110px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 3px solid #333; 
+        }
+
+        .info-header { text-align: center; margin-bottom: 30px; }
+        .info-header h1 { margin: 5px 0; font-size: 24px; color: #222; }
+        .tiktok-link { color: #fe2c55; text-decoration: none; font-weight: bold; }
+
+        h2 { border-bottom: 2px solid #333; padding-bottom: 5px; font-size: 18px; color: #333; text-transform: uppercase; }
+        .item { margin-bottom: 15px; }
+        .date { font-style: italic; color: #777; font-size: 13px; display: block; }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <img src="foto-idham.jpg" class="profile-img" alt="M. Idham Baihaqi">
-        <h2 style="color:#38bdf8; text-align:center;">M. IDHAM BAIHAQI</h2>
-        <div class="contact-box">
-            <div><i class="fa-solid fa-location-dot"></i><span>Sekopek Kulon, RT 01, RW 02, Sarirejo</span></div>
-            <div><i class="fa-solid fa-phone"></i><span>089682026762</span></div>
-            <div><i class="fa-solid fa-envelope"></i><span>idhambaihaqi14@gmail.com</span></div>
-            <div><i class="fa-brands fa-instagram"></i><span>@damnzzz9</span></div>
-        </div>
-        <p style="font-size:12px; color:#64748b; margin-top:20px; text-align:justify;">
-            Lulusan Teknik Audio Video dengan pengalaman kerja sebagai Operator Produksi. Memiliki latar belakang teknis kuat, disiplin, dan mampu beradaptasi cepat di lini produksi.
-        </p>
+
+<div class="container">
+    <div class="profile-section">
+        <img src="foto-profil.jpg" alt="Foto Idham" class="profile-img">
     </div>
 
-    <div class="content">
-        <div class="section">
-            <h1>Pendidikan</h1>
-            <div class="item">
-                <b>SMK NU 03 Kaliwungu</b>
-                <small>Jurusan Teknik Audio Video</small>
-            </div>
-            <div class="item">
-                <b>SMP Muhammadiyah 3 Kaliwungu</b>
-            </div>
-            <div class="item">
-                <b>MI Muhammadiyah Sarirejo</b>
-            </div>
-        </div>
-
-        <div class="section">
-            <h1>Pengalaman Kerja</h1>
-            <div class="item">
-                <b>Operator Produksi - PT Prym Intimates Indonesia</b>
-                <small>Juli 2024 - Oktober 2024</small>
-                <ul>
-                    <li>Mengoperasikan mesin produksi (Hook & Eyes) dengan target harian ketat.</li>
-                    <li>Bekerja secara fleksibel di berbagai lini produksi sesuai kebutuhan perusahaan.</li>
-                    <li>Melakukan pengecekan kualitas produk (QC) secara rutin.</li>
-                </ul>
-            </div>
-            <div class="item">
-                <b>Asisten Operasional - Usaha Mandiri (Keluarga)</b>
-                <small>2024 Desember - Sekarang</small>
-                <ul>
-                    <li>Mengelola operasional harian, pelayanan pelanggan, dan stok barang.</li>
-                    <li>Bertanggung jawab atas pencatatan transaksi harian dan kelancaran usaha.</li>
-                </ul>
-            </div>
-            <div class="item">
-                <b>Teknisi Magang (PKL) - Gilang Service</b>
-                <small>Januari 2023 - Juli 2023</small>
-                <ul>
-                    <li>Membantu pemeliharaan dan perbaikan berbagai perangkat elektronik konsumen.</li>
-                    <li>Melakukan troubleshooting dasar dan penggantian komponen elektronika.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h1>Kemampuan</h1>
-            <div class="skill-grid">
-                <div class="skill-tag">Soldering</div>
-                <div class="skill-tag">Multimeter</div>
-                <div class="skill-tag">Mesin Industri</div>
-                <div class="skill-tag">Cepat Belajar</div>
-                <div class="skill-tag">Ketelitian</div>
-                <div class="skill-tag">Kerja Tim</div>
-            </div>
-        </div>
+    <div class="info-header">
+        <h1>MUHAMMAD IDHAM BAIHAQI</h1>
+        <p>📍 Kaliwungu, Kendal | 📱 <a href="https://www.tiktok.com/@damnzzz9" class="tiktok-link">TikTok: @damnzzz9</a></p>
     </div>
+
+    <section>
+        <h2>PENGALAMAN KERJA</h2>
+        <div class="item">
+            <strong>Asisten Operasional - Usaha Mandiri</strong>
+            <span class="date">Desember 2024 – Sekarang</span>
+        </div>
+        <div class="item">
+            <strong>Operator Produksi - PT Prym Technology Indonesia</strong>
+            <span class="date">Juli 2024 – Oktober 2024</span>
+        </div>
+        <div class="item">
+            <strong>Teknisi Intern (PKL) - PT Telkom Akses</strong>
+            <span class="date">Januari 2023 – Juli 2023</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>PENDIDIKAN</h2>
+        <div class="item">
+            <strong>SMK NU 03 Kaliwungu</strong>
+            <span class="date">Teknik Audio Video | Lulus 2024</span>
+        </div>
+    </section>
+</div>
+
 </body>
 </html>
 
