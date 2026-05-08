@@ -5,172 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Muhammad Idham Baihaqi</title>
     <style>
-        /* THEME: AESTHETIC MINIMALIST WITH ACCENT */
-        body { 
-            font-family: 'Inter', sans-serif; 
-            line-height: 1.7; 
-            margin: 0; 
-            padding: 40px 20px; 
-            background-color: #fcfcfc; 
-            color: #1a1a1a; 
-        }
-        .container { 
-            max-width: 700px; 
-            margin: auto; 
-            background: white;
-            padding: 50px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border-top: 10px solid #1a1a1a; /* Aksen hitam tebal di atas */
-        }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f0f2f5; color: #333; }
+        .container { max-width: 750px; margin: auto; background: white; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 4px; }
         
-        .header { 
-            display: flex; 
-            align-items: center; 
-            gap: 30px; 
-            margin-bottom: 40px;
-        }
-        .profile-img { 
-            width: 130px; 
-            height: 130px; 
-            object-fit: cover; 
-            border: 4px solid #1a1a1a;
-            border-radius: 4px;
-        }
-        .header-text h1 { 
-            margin: 0; 
-            font-size: 26px; 
-            letter-spacing: 1px; 
-            text-transform: uppercase; 
-            color: #004a99; /* Aksen Biru sesuai CV asli */
-        }
-        .info-grid { 
-            font-size: 13px; 
-            color: #555; 
-            margin-top: 10px; 
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5px;
-        }
+        /* HEADER RAPI */
+        .header { display: flex; align-items: flex-start; gap: 30px; border-bottom: 2px solid #004a99; padding-bottom: 20px; margin-bottom: 25px; }
+        .profile-img { width: 140px; height: 160px; object-fit: cover; border: 2px solid #004a99; border-radius: 5px; }
+        
+        .header-info h1 { margin: 0 0 15px 0; color: #004a99; font-size: 26px; text-transform: uppercase; }
+        
+        /* KONTAK GRID AGAR LURUS */
+        .contact-grid { display: grid; grid-template-columns: 25px 100px 10px auto; gap: 8px; font-size: 13px; align-items: center; }
+        .icon { color: #004a99; font-weight: bold; }
+        .label { font-weight: bold; color: #555; }
 
-        h2 { 
-            font-size: 15px; 
-            text-transform: uppercase; 
-            letter-spacing: 2px; 
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-top: 35px;
-            color: #004a99;
-        }
+        h2 { font-size: 16px; color: #004a99; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 25px; text-transform: uppercase; }
+        p, li { font-size: 14px; text-align: justify; }
+        .job-item { margin-bottom: 15px; }
+        .job-header { display: flex; justify-content: space-between; font-weight: bold; }
+        .company { font-style: italic; color: #666; font-size: 13px; }
         
-        .item { margin-bottom: 25px; }
-        .title-row { display: flex; justify-content: space-between; align-items: baseline; }
-        .job-title { font-weight: 800; font-size: 15px; color: #1a1a1a; }
-        .date { font-size: 12px; color: #888; font-weight: 600; }
-        .company { font-size: 14px; color: #444; display: block; margin-bottom: 8px; }
-        
-        ul { padding-left: 20px; margin-top: 5px; }
-        li { font-size: 13.5px; margin-bottom: 5px; color: #333; text-align: justify; }
-
-        .skill-list { 
-            display: grid; 
-            grid-template-columns: 1fr 1fr; 
-            gap: 10px;
-        }
-        .skill-item { font-size: 13.5px; display: flex; align-items: center; }
-        .skill-item::before { content: "▪"; color: #004a99; margin-right: 10px; }
+        .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+        .skill-item:before { content: "✓ "; color: #004a99; font-weight: bold; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="header">
-        <img src="Idhambaihaqi.jpg" alt="Idham" class="profile-img">
-        <div class="header-text">
+        <img src="Idhambaihaqi.jpg" alt="Foto Idham" class="profile-img">
+        <div class="header-info">
             <h1>Muhammad Idham Baihaqi</h1>
-            <div class="info-grid">
-                <span>📍 Sekopek Kulon, Kaliwungu</span>
-                <span>📞 089682026762</span>
-                <span>✉️ idhambaihaqi14@gmail.com</span>
-                <span>📱 @damnzzz9</span>
+            
+            <div class="contact-grid">
+                <span class="icon">📍</span> <span class="label">Alamat</span> <span>:</span> <span>Sekopek Kulon, RT 01, RW 02, Sarirejo</span>
+                <span class="icon">📞</span> <span class="label">Telepon</span> <span>:</span> <span>089682026762</span>
+                <span class="icon">✉️</span> <span class="label">Email</span> <span>:</span> <span>idhambaihaqi14@gmail.com</span>
+                <span class="icon">📱</span> <span class="label">TikTok</span> <span>:</span> <span>@damnzzz9</span>
             </div>
         </div>
     </div>
 
     <section>
         <h2>Profil Singkat</h2>
-        <p style="font-size: 13.5px; text-align: justify; color: #444;">
-            Lulusan Teknik Audio Video dari SMK NU 03 Kaliwungu dengan pengalaman kerja sebagai Operator Produksi di industri manufaktur. Memiliki latar belakang teknis yang kuat, disiplin tinggi dalam mencapai target, serta mampu beradaptasi cepat di berbagai lini mesin produksi. Saat ini aktif mengelola operasional usaha mandiri.
-        </p>
-    </section>
-
-    <section>
-        <h2>Pengalaman Kerja</h2>
-        
-        <div class="item">
-            <div class="title-row">
-                <span class="job-title">Operator Produksi</span>
-                <span class="date">Juli 2024 – Oktober 2024</span>
-            </div>
-            <span class="company">PT Prym Intimates Indonesia</span>
-            <ul>
-                <li>Mengoperasikan mesin produksi (Hook & Eyes) dengan target harian yang ketat.</li>
-                <li>Bekerja secara fleksibel di berbagai lini produksi sesuai kebutuhan operasional perusahaan.</li>
-                <li>Melakukan pengecekan kualitas produk (QC) secara rutin untuk memastikan standar mutu.</li>
-            </ul>
-        </div>
-
-        <div class="item">
-            <div class="title-row">
-                <span class="job-title">Asisten Operasional</span>
-                <span class="date">Desember 2024 – Sekarang</span>
-            </div>
-            <span class="company">Usaha Mandiri (Keluarga)</span>
-            <ul>
-                <li>Mengelola operasional harian, pelayanan pelanggan, dan stok barang.</li>
-                <li>Bertanggung jawab atas pencatatan transaksi harian dan kelancaran usaha.</li>
-            </ul>
-        </div>
-
-        <div class="item">
-            <div class="title-row">
-                <span class="job-title">Teknisi Magang (PKL)</span>
-                <span class="date">Januari 2023 – Juli 2023</span>
-            </div>
-            <span class="company">Gilang Service</span>
-            <ul>
-                <li>Membantu pemeliharaan dan perbaikan berbagai perangkat elektronik konsumen.</li>
-                <li>Melakukan troubleshooting dasar dan penggantian komponen elektronika.</li>
-            </ul>
-        </div>
+        <p>Lulusan Teknik Audio Video dari SMK NU 03 Kaliwungu dengan pengalaman kerja sebagai Operator Produksi di industri manufaktur. Memiliki latar belakang teknis yang kuat, disiplin tinggi dalam mencapai target harian, serta mampu beradaptasi cepat di berbagai lini mesin produksi. Saat ini aktif mengelola operasional usaha mandiri.</p>
     </section>
 
     <section>
         <h2>Pendidikan</h2>
-        <div class="item">
-            <div class="title-row">
-                <span class="job-title">SMK NU 03 Kaliwungu</span>
-                <span class="date">Lulus 2024</span>
-            </div>
-            <span class="company">Jurusan Teknik Audio Video</span>
+        <div class="job-item">
+            <div class="job-header"><span>SMK NU 03 Kaliwungu</span> <span>Lulus 2024</span></div>
+            <div class="company">Teknik Audio Video</div>
         </div>
-        <div class="item" style="margin-top: -15px;">
-            <span class="company">SMP Muhammadiyah 3 Kaliwungu</span>
+        <div class="job-item">
+            <div class="job-header"><span>SMP Muhammadiyah 3 Kaliwungu</span></div>
         </div>
-        <div class="item" style="margin-top: -15px;">
-            <span class="company">MI Muhammadiyah Sarirejo</span>
+        <div class="job-item">
+            <div class="job-header"><span>MI Muhammadiyah Sarirejo</span></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Pengalaman Kerja</h2>
+        <div class="job-item">
+            <div class="job-header"><span>Operator Produksi</span> <span>2024</span></div>
+            <div class="company">PT Prym Intimates Indonesia</div>
+            <ul>
+                <li>Mengoperasikan mesin produksi (Hook & Eyes) sesuai target harian.</li>
+                <li>Melakukan pengecekan kualitas produk (QC).</li>
+            </ul>
+        </div>
+        <div class="job-item">
+            <div class="job-header"><span>Asisten Operasional</span> <span>2024 - Sekrg</span></div>
+            <div class="company">Usaha Mandiri (Keluarga)</div>
+            <ul>
+                <li>Mengelola stok barang dan transaksi harian.</li>
+            </ul>
         </div>
     </section>
 
     <section>
         <h2>Kemampuan</h2>
-        <div class="skill-list">
-            <div class="skill-item">Soldering</div>
+        <div class="skills">
+            <div class="skill-item">Soldering & Multimeter</div>
             <div class="skill-item">Cepat Belajar</div>
-            <div class="skill-item">Multimeter</div>
-            <div class="skill-item">Ketelitian</div>
-            <div class="skill-item">Pengoperasian Mesin Industri</div>
-            <div class="skill-item">Kerja Tim</div>
+            <div class="skill-item">Mesin Industri</div>
             <div class="skill-item">Manajemen Waktu</div>
+            <div class="skill-item">Kerja Tim</div>
+            <div class="skill-item">Ketelitian Tinggi</div>
         </div>
     </section>
 </div>
