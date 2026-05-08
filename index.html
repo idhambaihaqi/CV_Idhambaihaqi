@@ -5,155 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Muhammad Idham Baihaqi</title>
     <style>
-        /* AESTHETIC MINIMALIST BLACK THEME */
+        /* THEME: AESTHETIC MINIMALIST WITH ACCENT */
         body { 
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
-            line-height: 1.6; 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.7; 
             margin: 0; 
             padding: 40px 20px; 
-            background-color: #fafafa; /* Abu-abu sangat muda */
-            color: #1a1a1a; /* Hitam pekat untuk teks */
+            background-color: #fcfcfc; 
+            color: #1a1a1a; 
         }
         .container { 
-            max-width: 650px; 
+            max-width: 700px; 
             margin: auto; 
-            background: #ffffff; 
-            padding: 40px; 
-            border: 1px solid #e0e0e0; /* Garis tepi tipis */
+            background: white;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-top: 10px solid #1a1a1a; /* Aksen hitam tebal di atas */
         }
         
         .header { 
-            text-align: left; /* Rata kiri lebih minimalis */
-            margin-bottom: 40px; 
+            display: flex; 
+            align-items: center; 
+            gap: 30px; 
+            margin-bottom: 40px;
         }
         .profile-img { 
-            width: 100px; 
-            height: 100px; 
-            border-radius: 0; /* Kotak lebih terasa industrial/minimalis */
+            width: 130px; 
+            height: 130px; 
             object-fit: cover; 
-            filter: grayscale(100%); /* Efek hitam putih biar lebih aesthetic */
-            border: 1px solid #1a1a1a;
-            margin-bottom: 20px;
+            border: 4px solid #1a1a1a;
+            border-radius: 4px;
         }
-        .profile-img:hover { filter: grayscale(0%); transition: 0.3s; }
-
-        h1 { 
+        .header-text h1 { 
             margin: 0; 
-            color: #000; 
+            font-size: 26px; 
+            letter-spacing: 1px; 
             text-transform: uppercase; 
-            font-size: 22px; 
-            letter-spacing: 2px; 
-            font-weight: 800;
+            color: #004a99; /* Aksen Biru sesuai CV asli */
         }
-        .contact-info {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .info-grid { 
+            font-size: 13px; 
+            color: #555; 
+            margin-top: 10px; 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
         }
 
         h2 { 
-            color: #000; 
-            border-bottom: 2px solid #000; /* Garis hitam tebal khas minimalis */
-            padding-bottom: 5px; 
-            margin-top: 40px; 
-            font-size: 14px; 
+            font-size: 15px; 
             text-transform: uppercase; 
-            letter-spacing: 2px;
+            letter-spacing: 2px; 
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 35px;
+            color: #004a99;
         }
         
         .item { margin-bottom: 25px; }
-        .job-title { font-weight: 700; font-size: 15px; display: block; color: #000; text-transform: uppercase; }
-        .company { color: #555; font-size: 14px; font-weight: 500; }
-        .date { font-style: italic; color: #999; font-size: 12px; margin-bottom: 8px; display: block; }
+        .title-row { display: flex; justify-content: space-between; align-items: baseline; }
+        .job-title { font-weight: 800; font-size: 15px; color: #1a1a1a; }
+        .date { font-size: 12px; color: #888; font-weight: 600; }
+        .company { font-size: 14px; color: #444; display: block; margin-bottom: 8px; }
         
-        ul { padding-left: 18px; margin-top: 8px; }
-        li { margin-bottom: 5px; font-size: 13.5px; color: #333; }
-        
-        .summary { text-align: justify; font-size: 13.5px; color: #444; line-height: 1.8; }
-        
-        /* SKILL TAGS */
-        .skill-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
-        .skill-box { 
-            border: 1px solid #000; 
-            padding: 5px 12px; 
-            font-size: 11px; 
-            text-transform: uppercase; 
-            letter-spacing: 1px;
-            font-weight: 600;
+        ul { padding-left: 20px; margin-top: 5px; }
+        li { font-size: 13.5px; margin-bottom: 5px; color: #333; text-align: justify; }
+
+        .skill-list { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px;
         }
+        .skill-item { font-size: 13.5px; display: flex; align-items: center; }
+        .skill-item::before { content: "▪"; color: #004a99; margin-right: 10px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="header">
-        <img src="Idhambaihaqi.jpg" alt="Muhammad Idham Baihaqi" class="profile-img">
-        <h1>Muhammad Idham Baihaqi</h1>
-        <div class="contact-info">
-            Kendal, Jawa Tengah &nbsp;•&nbsp; 089682026762 &nbsp;•&nbsp; idhambaihaqi14@gmail.com
+        <img src="Idhambaihaqi.jpg" alt="Idham" class="profile-img">
+        <div class="header-text">
+            <h1>Muhammad Idham Baihaqi</h1>
+            <div class="info-grid">
+                <span>📍 Sekopek Kulon, Kaliwungu</span>
+                <span>📞 089682026762</span>
+                <span>✉️ idhambaihaqi14@gmail.com</span>
+                <span>📱 @damnzzz9</span>
+            </div>
         </div>
     </div>
 
     <section>
-        <h2>About</h2>
-        <p class="summary">
-            Lulusan Teknik Audio Video dari SMK NU 03 Kaliwungu. Memiliki pengalaman operasional di industri manufaktur dengan disiplin tinggi terhadap target harian. Terbiasa bekerja dengan ketelitian teknis dan adaptasi cepat pada lingkungan kerja dinamis.
+        <h2>Profil Singkat</h2>
+        <p style="font-size: 13.5px; text-align: justify; color: #444;">
+            Lulusan Teknik Audio Video dari SMK NU 03 Kaliwungu dengan pengalaman kerja sebagai Operator Produksi di industri manufaktur. Memiliki latar belakang teknis yang kuat, disiplin tinggi dalam mencapai target, serta mampu beradaptasi cepat di berbagai lini mesin produksi. Saat ini aktif mengelola operasional usaha mandiri.
         </p>
     </section>
 
     <section>
-        <h2>Experience</h2>
+        <h2>Pengalaman Kerja</h2>
         
         <div class="item">
-            <span class="job-title">Asisten Operasional</span>
-            <span class="company">Usaha Mandiri</span>
-            <span class="date">Desember 2024 – Sekarang</span>
-            <ul>
-                <li>Manajemen harian operasional dan stok barang.</li>
-                <li>Pencatatan transaksi dan optimalisasi layanan pelanggan.</li>
-            </ul>
-        </div>
-
-        <div class="item">
-            <span class="job-title">Operator Produksi</span>
+            <div class="title-row">
+                <span class="job-title">Operator Produksi</span>
+                <span class="date">Juli 2024 – Oktober 2024</span>
+            </div>
             <span class="company">PT Prym Intimates Indonesia</span>
-            <span class="date">Juli 2024 – Oktober 2024</span>
             <ul>
-                <li>Mengoperasikan mesin produksi Hook & Eyes dengan standar efisiensi tinggi.</li>
-                <li>Menjaga kontrol kualitas (QC) pada setiap tahap lini produksi.</li>
+                <li>Mengoperasikan mesin produksi (Hook & Eyes) dengan target harian yang ketat.</li>
+                <li>Bekerja secara fleksibel di berbagai lini produksi sesuai kebutuhan operasional perusahaan.</li>
+                <li>Melakukan pengecekan kualitas produk (QC) secara rutin untuk memastikan standar mutu.</li>
             </ul>
         </div>
 
         <div class="item">
-            <span class="job-title">Teknisi Magang</span>
+            <div class="title-row">
+                <span class="job-title">Asisten Operasional</span>
+                <span class="date">Desember 2024 – Sekarang</span>
+            </div>
+            <span class="company">Usaha Mandiri (Keluarga)</span>
+            <ul>
+                <li>Mengelola operasional harian, pelayanan pelanggan, dan stok barang.</li>
+                <li>Bertanggung jawab atas pencatatan transaksi harian dan kelancaran usaha.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="title-row">
+                <span class="job-title">Teknisi Magang (PKL)</span>
+                <span class="date">Januari 2023 – Juli 2023</span>
+            </div>
             <span class="company">Gilang Service</span>
-            <span class="date">Januari 2023 – Juli 2023</span>
             <ul>
-                <li>Troubleshooting dan perbaikan komponen perangkat elektronik.</li>
-                <li>Pemeliharaan teknis perangkat audio video konsumen.</li>
+                <li>Membantu pemeliharaan dan perbaikan berbagai perangkat elektronik konsumen.</li>
+                <li>Melakukan troubleshooting dasar dan penggantian komponen elektronika.</li>
             </ul>
         </div>
     </section>
 
     <section>
-        <h2>Education</h2>
+        <h2>Pendidikan</h2>
         <div class="item">
-            <span class="job-title">SMK NU 03 Kaliwungu</span>
-            <span class="date">Teknik Audio Video | Lulus 2024</span>
+            <div class="title-row">
+                <span class="job-title">SMK NU 03 Kaliwungu</span>
+                <span class="date">Lulus 2024</span>
+            </div>
+            <span class="company">Jurusan Teknik Audio Video</span>
+        </div>
+        <div class="item" style="margin-top: -15px;">
+            <span class="company">SMP Muhammadiyah 3 Kaliwungu</span>
+        </div>
+        <div class="item" style="margin-top: -15px;">
+            <span class="company">MI Muhammadiyah Sarirejo</span>
         </div>
     </section>
 
     <section>
-        <h2>Expertise</h2>
-        <div class="skill-container">
-            <div class="skill-box">Soldering</div>
-            <div class="skill-box">Multimeter</div>
-            <div class="skill-box">Machine Operation</div>
-            <div class="skill-box">Quality Control</div>
-            <div class="skill-box">Teamwork</div>
-            <div class="skill-box">Time Management</div>
+        <h2>Kemampuan</h2>
+        <div class="skill-list">
+            <div class="skill-item">Soldering</div>
+            <div class="skill-item">Cepat Belajar</div>
+            <div class="skill-item">Multimeter</div>
+            <div class="skill-item">Ketelitian</div>
+            <div class="skill-item">Pengoperasian Mesin Industri</div>
+            <div class="skill-item">Kerja Tim</div>
+            <div class="skill-item">Manajemen Waktu</div>
         </div>
     </section>
 </div>
