@@ -5,28 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Muhammad Idham Baihaqi</title>
     <style>
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f0f2f5; color: #333; }
-        .container { max-width: 750px; margin: auto; background: white; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 4px; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
         
-        /* HEADER RAPI */
-        .header { display: flex; align-items: flex-start; gap: 30px; border-bottom: 2px solid #004a99; padding-bottom: 20px; margin-bottom: 25px; }
-        .profile-img { width: 140px; height: 160px; object-fit: cover; border: 2px solid #004a99; border-radius: 5px; }
-        
-        .header-info h1 { margin: 0 0 15px 0; color: #004a99; font-size: 26px; text-transform: uppercase; }
-        
-        /* KONTAK GRID AGAR LURUS */
-        .contact-grid { display: grid; grid-template-columns: 25px 100px 10px auto; gap: 8px; font-size: 13px; align-items: center; }
-        .icon { color: #004a99; font-weight: bold; }
-        .label { font-weight: bold; color: #555; }
+        /* BAGIAN HEADER & NAMA */
+        .header { text-align: center; margin-bottom: 25px; }
+        .profile-img { width: 120px; height: 150px; object-fit: cover; border: 3px solid #0056b3; border-radius: 8px; margin-bottom: 15px; }
+        h1 { margin: 0; color: #0056b3; font-size: 24px; letter-spacing: 1px; text-transform: uppercase; }
 
-        h2 { font-size: 16px; color: #004a99; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 25px; text-transform: uppercase; }
-        p, li { font-size: 14px; text-align: justify; }
-        .job-item { margin-bottom: 15px; }
-        .job-header { display: flex; justify-content: space-between; font-weight: bold; }
-        .company { font-style: italic; color: #666; font-size: 13px; }
-        
-        .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
-        .skill-item:before { content: "✓ "; color: #004a99; font-weight: bold; }
+        /* KOTAK KONTAK DISATUKAN (LEBIH RAPI) */
+        .contact-box { background: #f8fbff; border: 1px solid #e1e8f0; padding: 15px; border-radius: 8px; margin-bottom: 30px; }
+        .info-item { display: flex; font-size: 13px; margin-bottom: 5px; border-bottom: 1px solid #edf2f7; padding-bottom: 5px; }
+        .info-item:last-child { border-bottom: none; }
+        .label { width: 80px; font-weight: bold; color: #0056b3; }
+        .value { flex: 1; }
+
+        h2 { font-size: 16px; color: #0056b3; border-left: 5px solid #0056b3; padding-left: 10px; margin-top: 25px; text-transform: uppercase; }
+        p, li { font-size: 13.5px; text-align: justify; line-height: 1.6; }
+        .item { margin-bottom: 20px; }
+        .title { font-weight: bold; display: block; color: #111; }
+        .sub-title { font-size: 12px; color: #666; font-style: italic; }
+        ul { padding-left: 20px; margin: 5px 0; }
     </style>
 </head>
 <body>
@@ -34,69 +33,59 @@
 <div class="container">
     <div class="header">
         <img src="Idhambaihaqi.jpg" alt="Foto Idham" class="profile-img">
-        <div class="header-info">
-            <h1>Muhammad Idham Baihaqi</h1>
-            
-            <div class="contact-grid">
-                <span class="icon">📍</span> <span class="label">Alamat</span> <span>:</span> <span>Sekopek Kulon, RT 01, RW 02, Sarirejo</span>
-                <span class="icon">📞</span> <span class="label">Telepon</span> <span>:</span> <span>089682026762</span>
-                <span class="icon">✉️</span> <span class="label">Email</span> <span>:</span> <span>idhambaihaqi14@gmail.com</span>
-                <span class="icon">📱</span> <span class="label">TikTok</span> <span>:</span> <span>@damnzzz9</span>
-            </div>
-        </div>
+        <h1>Muhammad Idham Baihaqi</h1>
+    </div>
+
+    <div class="contact-box">
+        <div class="info-item"><span class="label">Alamat</span><span class="value">: Sekopek Kulon, RT 01, RW 02, Sarirejo</span></div>
+        <div class="info-item"><span class="label">Telepon</span><span class="value">: 089682026762</span></div>
+        <div class="info-item"><span class="label">Email</span><span class="value">: idhambaihaqi14@gmail.com</span></div>
+        <div class="info-item"><span class="label">TikTok</span><span class="value">: @damnzzz9</span></div>
     </div>
 
     <section>
         <h2>Profil Singkat</h2>
-        <p>Lulusan Teknik Audio Video dari SMK NU 03 Kaliwungu dengan pengalaman kerja sebagai Operator Produksi di industri manufaktur. Memiliki latar belakang teknis yang kuat, disiplin tinggi dalam mencapai target harian, serta mampu beradaptasi cepat di berbagai lini mesin produksi. Saat ini aktif mengelola operasional usaha mandiri.</p>
-    </section>
-
-    <section>
-        <h2>Pendidikan</h2>
-        <div class="job-item">
-            <div class="job-header"><span>SMK NU 03 Kaliwungu</span> <span>Lulus 2024</span></div>
-            <div class="company">Teknik Audio Video</div>
-        </div>
-        <div class="job-item">
-            <div class="job-header"><span>SMP Muhammadiyah 3 Kaliwungu</span></div>
-        </div>
-        <div class="job-item">
-            <div class="job-header"><span>MI Muhammadiyah Sarirejo</span></div>
-        </div>
+        <p>Lulusan Teknik Audio Video dari SMK NU 03 Kaliwungu dengan pengalaman kerja sebagai Operator Produksi. Disiplin tinggi dalam mencapai target harian dan mampu beradaptasi cepat di lingkungan kerja dinamis.</p>
     </section>
 
     <section>
         <h2>Pengalaman Kerja</h2>
-        <div class="job-item">
-            <div class="job-header"><span>Operator Produksi</span> <span>2024</span></div>
-            <div class="company">PT Prym Intimates Indonesia</div>
+        
+        <div class="item">
+            <span class="title">Asisten Operasional - Usaha Mandiri</span>
+            <span class="sub-title">Desember 2024 – Sekarang</span>
             <ul>
-                <li>Mengoperasikan mesin produksi (Hook & Eyes) sesuai target harian.</li>
-                <li>Melakukan pengecekan kualitas produk (QC).</li>
+                <li>Mengelola stok barang, pelayanan pelanggan, dan transaksi harian.</li>
             </ul>
         </div>
-        <div class="job-item">
-            <div class="job-header"><span>Asisten Operasional</span> <span>2024 - Sekrg</span></div>
-            <div class="company">Usaha Mandiri (Keluarga)</div>
+
+        <div class="item">
+            <span class="title">Operator Produksi - PT Prym Intimates Indonesia</span>
+            <span class="sub-title">Juli 2024 – Oktober 2024</span>
             <ul>
-                <li>Mengelola stok barang dan transaksi harian.</li>
+                <li>Mengoperasikan mesin produksi (Hook & Eyes) dengan target harian ketat.</li>
+                <li>Pengecekan kualitas produk (QC) sesuai standar mutu perusahaan.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <span class="title">Teknisi Magang - Gilang Service</span>
+            <span class="sub-title">Januari 2023 – Juli 2023</span>
+            <ul>
+                <li>Membantu perbaikan dan pemeliharaan perangkat elektronik konsumen.</li>
             </ul>
         </div>
     </section>
 
     <section>
-        <h2>Kemampuan</h2>
-        <div class="skills">
-            <div class="skill-item">Soldering & Multimeter</div>
-            <div class="skill-item">Cepat Belajar</div>
-            <div class="skill-item">Mesin Industri</div>
-            <div class="skill-item">Manajemen Waktu</div>
-            <div class="skill-item">Kerja Tim</div>
-            <div class="skill-item">Ketelitian Tinggi</div>
-        </div>
+        <h2>Pendidikan</h2>
+        <p><b>SMK NU 03 Kaliwungu</b> (Lulus 2024)<br>
+        SMP Muhammadiyah 3 Kaliwungu<br>
+        MI Muhammadiyah Sarirejo</p>
     </section>
 </div>
 
 </body>
 </html>
+
 
