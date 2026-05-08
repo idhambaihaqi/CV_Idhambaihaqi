@@ -5,62 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Muhammad Idham Baihaqi</title>
     <style>
-        /* 1. PERINTAH PENGATURAN TAMPILAN & FOTO (CSS) */
-        body { font-family: sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; }
-        .container { max-width: 600px; margin: auto; background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        /* AESTHETIC MINIMALIST BLACK THEME */
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 40px 20px; 
+            background-color: #fafafa; /* Abu-abu sangat muda */
+            color: #1a1a1a; /* Hitam pekat untuk teks */
+        }
+        .container { 
+            max-width: 650px; 
+            margin: auto; 
+            background: #ffffff; 
+            padding: 40px; 
+            border: 1px solid #e0e0e0; /* Garis tepi tipis */
+        }
         
-        /* Mengatur foto agar bulat dan ukurannya pas */
-        .profile-section { text-align: center; margin-bottom: 20px; }
+        .header { 
+            text-align: left; /* Rata kiri lebih minimalis */
+            margin-bottom: 40px; 
+        }
         .profile-img { 
-            width: 110px; 
-            height: 110px; 
-            border-radius: 50%; 
+            width: 100px; 
+            height: 100px; 
+            border-radius: 0; /* Kotak lebih terasa industrial/minimalis */
             object-fit: cover; 
-            border: 3px solid #333; 
+            filter: grayscale(100%); /* Efek hitam putih biar lebih aesthetic */
+            border: 1px solid #1a1a1a;
+            margin-bottom: 20px;
+        }
+        .profile-img:hover { filter: grayscale(0%); transition: 0.3s; }
+
+        h1 { 
+            margin: 0; 
+            color: #000; 
+            text-transform: uppercase; 
+            font-size: 22px; 
+            letter-spacing: 2px; 
+            font-weight: 800;
+        }
+        .contact-info {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .info-header { text-align: center; margin-bottom: 30px; }
-        .info-header h1 { margin: 5px 0; font-size: 24px; color: #222; }
-        .tiktok-link { color: #fe2c55; text-decoration: none; font-weight: bold; }
-
-        h2 { border-bottom: 2px solid #333; padding-bottom: 5px; font-size: 18px; color: #333; text-transform: uppercase; }
-        .item { margin-bottom: 15px; }
-        .date { font-style: italic; color: #777; font-size: 13px; display: block; }
+        h2 { 
+            color: #000; 
+            border-bottom: 2px solid #000; /* Garis hitam tebal khas minimalis */
+            padding-bottom: 5px; 
+            margin-top: 40px; 
+            font-size: 14px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+        }
+        
+        .item { margin-bottom: 25px; }
+        .job-title { font-weight: 700; font-size: 15px; display: block; color: #000; text-transform: uppercase; }
+        .company { color: #555; font-size: 14px; font-weight: 500; }
+        .date { font-style: italic; color: #999; font-size: 12px; margin-bottom: 8px; display: block; }
+        
+        ul { padding-left: 18px; margin-top: 8px; }
+        li { margin-bottom: 5px; font-size: 13.5px; color: #333; }
+        
+        .summary { text-align: justify; font-size: 13.5px; color: #444; line-height: 1.8; }
+        
+        /* SKILL TAGS */
+        .skill-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+        .skill-box { 
+            border: 1px solid #000; 
+            padding: 5px 12px; 
+            font-size: 11px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="profile-section">
-        <img src="foto-profil.jpg" alt="Foto Idham" class="profile-img">
-    </div>
-
-    <div class="info-header">
-        <h1>MUHAMMAD IDHAM BAIHAQI</h1>
-        <p>📍 Kaliwungu, Kendal | 📱 <a href="https://www.tiktok.com/@damnzzz9" class="tiktok-link">TikTok: @damnzzz9</a></p>
+    <div class="header">
+        <img src="Idhambaihaqi.jpg" alt="Muhammad Idham Baihaqi" class="profile-img">
+        <h1>Muhammad Idham Baihaqi</h1>
+        <div class="contact-info">
+            Kendal, Jawa Tengah &nbsp;•&nbsp; 089682026762 &nbsp;•&nbsp; idhambaihaqi14@gmail.com
+        </div>
     </div>
 
     <section>
-        <h2>PENGALAMAN KERJA</h2>
+        <h2>About</h2>
+        <p class="summary">
+            Lulusan Teknik Audio Video dari SMK NU 03 Kaliwungu. Memiliki pengalaman operasional di industri manufaktur dengan disiplin tinggi terhadap target harian. Terbiasa bekerja dengan ketelitian teknis dan adaptasi cepat pada lingkungan kerja dinamis.
+        </p>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        
         <div class="item">
-            <strong>Asisten Operasional - Usaha Mandiri</strong>
+            <span class="job-title">Asisten Operasional</span>
+            <span class="company">Usaha Mandiri</span>
             <span class="date">Desember 2024 – Sekarang</span>
+            <ul>
+                <li>Manajemen harian operasional dan stok barang.</li>
+                <li>Pencatatan transaksi dan optimalisasi layanan pelanggan.</li>
+            </ul>
         </div>
+
         <div class="item">
-            <strong>Operator Produksi - PT Prym Technology Indonesia</strong>
+            <span class="job-title">Operator Produksi</span>
+            <span class="company">PT Prym Intimates Indonesia</span>
             <span class="date">Juli 2024 – Oktober 2024</span>
+            <ul>
+                <li>Mengoperasikan mesin produksi Hook & Eyes dengan standar efisiensi tinggi.</li>
+                <li>Menjaga kontrol kualitas (QC) pada setiap tahap lini produksi.</li>
+            </ul>
         </div>
+
         <div class="item">
-            <strong>Teknisi Intern (PKL) - PT Telkom Akses</strong>
+            <span class="job-title">Teknisi Magang</span>
+            <span class="company">Gilang Service</span>
             <span class="date">Januari 2023 – Juli 2023</span>
+            <ul>
+                <li>Troubleshooting dan perbaikan komponen perangkat elektronik.</li>
+                <li>Pemeliharaan teknis perangkat audio video konsumen.</li>
+            </ul>
         </div>
     </section>
 
     <section>
-        <h2>PENDIDIKAN</h2>
+        <h2>Education</h2>
         <div class="item">
-            <strong>SMK NU 03 Kaliwungu</strong>
+            <span class="job-title">SMK NU 03 Kaliwungu</span>
             <span class="date">Teknik Audio Video | Lulus 2024</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Expertise</h2>
+        <div class="skill-container">
+            <div class="skill-box">Soldering</div>
+            <div class="skill-box">Multimeter</div>
+            <div class="skill-box">Machine Operation</div>
+            <div class="skill-box">Quality Control</div>
+            <div class="skill-box">Teamwork</div>
+            <div class="skill-box">Time Management</div>
         </div>
     </section>
 </div>
