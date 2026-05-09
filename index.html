@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Muhammad Idham Baihaqi</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; color: #333; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        /* TAMBAHAN: Warna background luar kartu agar lebih aesthetic */
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            background-color: #f0f2f5; /* Abu-abu muda modern */
+            margin: 0; 
+            padding: 20px; 
+            color: #333; 
+        }
+        .container { 
+            max-width: 600px; 
+            margin: auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+        }
         
         .header { text-align: center; margin-bottom: 20px; }
         .profile-img { width: 130px; height: 160px; object-fit: cover; border: 3px solid #0056b3; border-radius: 8px; margin-bottom: 10px; }
         h1 { margin: 0; color: #0056b3; font-size: 22px; text-transform: uppercase; }
 
-        /* BOX KONTAK SIMETRIS */
         .contact-box { background: #f8fbff; border: 1px solid #e1e8f0; padding: 15px; border-radius: 8px; margin-bottom: 25px; }
         .info-row { display: grid; grid-template-columns: 80px 15px auto; font-size: 13px; margin-bottom: 6px; align-items: start; }
         .label { font-weight: bold; color: #0056b3; }
+        
+        /* Gaya untuk link agar tetap rapi */
+        .contact-box a { color: #333; text-decoration: none; }
+        .contact-box a:hover { color: #0056b3; text-decoration: underline; }
 
         h2 { font-size: 16px; color: #0056b3; border-left: 5px solid #0056b3; padding-left: 10px; margin-top: 25px; text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         p, li { font-size: 13.5px; text-align: justify; line-height: 1.6; }
@@ -24,7 +41,6 @@
         .title { font-weight: bold; display: block; color: #111; font-size: 14px; }
         .sub-title { font-size: 12px; color: #666; font-style: italic; display: block; margin-bottom: 5px; }
         
-        /* SKILL GRID */
         .skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
         .skill-item { background: #f0f4f8; padding: 5px 10px; border-radius: 4px; font-size: 12.5px; border-left: 3px solid #0056b3; }
     </style>
@@ -39,14 +55,14 @@
 
     <div class="contact-box">
         <div class="info-row"><div class="label">Alamat</div><div>:</div><div>Sekopek Kulon, RT 01, RW 02, Sarirejo, Kaliwungu</div></div>
-        <div class="info-row"><div class="label">Telepon</div><div>:</div><div>089682026762</div></div>
-        <div class="info-row"><div class="label">Email</div><div>:</div><div>idhambaihaqi14@gmail.com</div></div>
+        <div class="info-row"><div class="label">Telepon</div><div>:</div><div><a href="tel:089682026762">089682026762</a></div></div>
+        <div class="info-row"><div class="label">Email</div><div>:</div><div><a href="mailto:idhambaihaqi14@gmail.com">idhambaihaqi14@gmail.com</a></div></div>
         <div class="info-row"><div class="label">TikTok</div><div>:</div><div>@damnzzz9</div></div>
     </div>
 
     <section>
         <h2>Profil Singkat</h2>
-        <p>Lulusan Teknik Audio Video dari SMK NU 03 Kaliwungu dengan pengalaman kerja sebagai Operator Produksi. Disiplin tinggi dalam mencapai target harian dan mampu beradaptasi cepat di lingkungan kerja dinamis.</p>
+        <p>Lulusan Teknik Audio Video dari SMK NU 03 Kaliwungu dengan pengalaman kerja sebagai Operator Produksi. Disiplin tinggi dalam mencapai target harian dan mampu beradaptasi cepat di lingkungan kerja dinamis. Saat ini aktif mengelola operasional usaha mandiri.</p>
     </section>
 
     <section>
